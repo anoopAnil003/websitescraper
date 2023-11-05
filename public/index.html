@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Webpage Scraper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.7/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Webpage Scraper</h1>
+        <form id="wordCountForm">
+            <div class="form-row justify-content-center align-items-center">
+                <div class="col-auto">
+                    <input class="form-control" type="text" id="websiteUrl" placeholder="Enter website URL">
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-primary" type="submit">Get Insights</button>
+                </div>
+            </div>
+        </form>
+        <div class="result">
+            <h2>RESULT</h2>
+            <table id="searchHistory">
+                <thead>
+                    <tr>
+                        <th>Domain Name</th>
+                        <th>Word Count</th>
+                        <th>Web Links</th>
+                        <th>Media Links</th>
+                        <th>Favorite</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="searchHistory"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.7/js/jquery.dataTables.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
